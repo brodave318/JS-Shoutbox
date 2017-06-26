@@ -15,6 +15,7 @@
       <ul>
         <li></li>
       </ul>
+    </div>
       <footer>
         <form>
           <label>Name: </label>
