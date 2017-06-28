@@ -11,8 +11,8 @@ $(document).ready(function() {
     } else {
       $.ajax({
         type: "POST",
-        url: "../ajaxPhpShoutbox/shoutbox.php"
-        data: dataString;
+        url: "../ajaxPhpShoutbox/shoutbox.php",
+        data: dataString,
         cache: false,
         success: function(html) {
           $('#shouts ul').prepend(html);
@@ -26,9 +26,9 @@ $(document).ready(function() {
 
 function getDate() {
   var date;
-  date = new Date;
+  date = new Date();
   date = date.getUTCFullYear() + '-' +
-          ('00' + (date.getUTCMonth() + 1).slice(-2) + '-' +
+          ('00' + (date.getUTCMonth() + 1)).slice(-2) + '-' +
           ('00' + date.getUTCDate()).slice(-2) + ' ' +
           ('00' + date.getUTCHours()).slice(-2) + ':' +
           ('00' + date.getUTCMinutes()).slice(-2) + ':' +

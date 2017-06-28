@@ -1,6 +1,6 @@
 <?php
-// Connect to MySql
-$con = mysqli_connect('localhost', 'root', '', 'ajaxPhpShoutbox');
+// Connect to MySQL
+$con = mysqli_connect('localhost', 'root', '', 'ajaxphpshoutbox');
 if(mysqli_connect_errno()) {
   echo 'Failed to connect: ' . mysqli_connect_error();
 }
